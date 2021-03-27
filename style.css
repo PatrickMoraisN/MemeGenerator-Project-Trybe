@@ -1,14 +1,23 @@
 body {
   align-items: center;
-  background-color: rgb(136 , 136 , 136);
+  background: linear-gradient(rgb(87, 87, 87), rgb(37, 37, 37));
   text-align: center;
+  color: white;
+}
+
+button{
+  cursor: pointer;
+}
+
+button:hover{
+  box-shadow: 0 0 5px white;
 }
 
 #meme-image-container {
   margin-top: 20px;
   border: 1px solid black;
   background-color: white;
-  height: 500px;
+  height: 400px;
   width: 400px;
   position: relative;
   margin-left: auto;
@@ -25,11 +34,12 @@ body {
   word-break: break-all;
   text-transform: uppercase;
   left: 20px;
+  text-align: center;
 }
 
 #meme-image {
   width: 400px;
-  height: 500px;
+  height: 400px;
   background-size: cover;
 }
 
@@ -39,18 +49,21 @@ body {
 
 #fire , #water , #earth {
   color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
 }
 
 #fire {
-  background-color: red;
+  background: linear-gradient(rgb(252, 59, 59), rgb(128, 0, 0))
 }
 
 #water {
-  background-color: blue;
+  background:linear-gradient(rgb(87, 87, 255), rgb(0, 25, 138))
 }
 
 #earth {
-  background-color: green;
+  background:linear-gradient(rgb(0, 204, 0), rgb(15, 88, 0))
 }
 
 .memes {
@@ -64,4 +77,25 @@ body {
   height: 120px;
   margin-left: 5px;
   margin-right: 5px;
+  cursor: pointer;
+}
+
+#meme-1:hover , #meme-2:hover , #meme-3:hover , #meme-4:hover {
+box-shadow: 0 0 5px white;
+}
+
+#submit {
+  padding: 10px;
+  background: linear-gradient(rgb(10, 28, 192), rgb(0, 11, 73));
+  border: 0;
+  border-radius: 10px;
+  color: white;
+}
+
+#submit:hover{
+  box-shadow: 0 0 5px white;
+}
+
+#title{
+  font-size: 70px;
 }
